@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{2B15BBA1-9423-41FE-882C-7528264B2157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptography_SHA1", "Src\Cryptography_SHA1\Cryptography_SHA1.csproj", "{8F864F72-876B-4698-B172-0DB71A5FBBB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography_AES", "Src\Cryptography_AES\Cryptography_AES.csproj", "{065FE418-36AF-4BAC-B3F6-63C965080A65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F864F72-876B-4698-B172-0DB71A5FBBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F864F72-876B-4698-B172-0DB71A5FBBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F864F72-876B-4698-B172-0DB71A5FBBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F864F72-876B-4698-B172-0DB71A5FBBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{065FE418-36AF-4BAC-B3F6-63C965080A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065FE418-36AF-4BAC-B3F6-63C965080A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065FE418-36AF-4BAC-B3F6-63C965080A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065FE418-36AF-4BAC-B3F6-63C965080A65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F864F72-876B-4698-B172-0DB71A5FBBB3} = {2B15BBA1-9423-41FE-882C-7528264B2157}
+		{065FE418-36AF-4BAC-B3F6-63C965080A65} = {2B15BBA1-9423-41FE-882C-7528264B2157}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D710BFF-ACA5-4FBC-A02F-05979E762C06}
+	EndGlobalSection
+EndGlobal
