@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{2B15BBA1-942
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptography_SHA1", "Src\Cryptography_SHA1\Cryptography_SHA1.csproj", "{8F864F72-876B-4698-B172-0DB71A5FBBB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography_AES", "Src\Cryptography_AES\Cryptography_AES.csproj", "{065FE418-36AF-4BAC-B3F6-63C965080A65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptography_AES", "Src\Cryptography_AES\Cryptography_AES.csproj", "{065FE418-36AF-4BAC-B3F6-63C965080A65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{189C931A-CBEE-494B-B791-79A12D3CBAF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Cryptography", "Test\Test.Cryptography\Test.Cryptography.csproj", "{196F829D-BBA0-404B-830B-D395D81F2581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Cryptography", "Test\Test.Cryptography\Test.Cryptography.csproj", "{196F829D-BBA0-404B-830B-D395D81F2581}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptography_RSA", "Src\Cryptography_RSA\Cryptography_RSA.csproj", "{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{196F829D-BBA0-404B-830B-D395D81F2581}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{196F829D-BBA0-404B-830B-D395D81F2581}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{196F829D-BBA0-404B-830B-D395D81F2581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{8F864F72-876B-4698-B172-0DB71A5FBBB3} = {2B15BBA1-9423-41FE-882C-7528264B2157}
 		{065FE418-36AF-4BAC-B3F6-63C965080A65} = {2B15BBA1-9423-41FE-882C-7528264B2157}
 		{196F829D-BBA0-404B-830B-D395D81F2581} = {189C931A-CBEE-494B-B791-79A12D3CBAF2}
+		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD} = {2B15BBA1-9423-41FE-882C-7528264B2157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D710BFF-ACA5-4FBC-A02F-05979E762C06}
