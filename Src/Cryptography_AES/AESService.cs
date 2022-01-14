@@ -14,47 +14,41 @@ namespace Cryptography_AES
         }
         public string Encrypt(string text)
         {
-            byte[] iv = new byte[16];
-            byte[] array;
             using (Aes aes = Aes.Create())
             {
                 aes.Key = Encoding.UTF8.GetBytes(Key);
-                aes.IV = iv;
+                aes.IV = new byte[16];
 
                 ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
 
                 using (MemoryStream memoryStream = new MemoryStream())
                 {
-                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, encryptor, CryptoStreamMode.Write))
+                    using (CryptoStream cryptoStream = new CryptoStream(memoryStream, encryptor, CryptoStreamMode.Write))
                     {
-                        using (StreamWriter streamWriter = new StreamWriter((Stream)cryptoStream))
+                        using (StreamWriter streamWriter = new StreamWriter(cryptoStream))
                         {
                             streamWriter.Write(text);
                         }
-                        array = memoryStream.ToArray();
-                        return Convert.ToBase64String(array);
+                        return Convert.ToBase64String(memoryStream.ToArray());
                     }
                 }
             }
 
         }
+
         public string Decrypt(string text)
         {
-            byte[] iv = new byte[16];
-            text = text.Replace(" ", "+");
-            byte[] buffer = Convert.FromBase64String(text);
-
             using (Aes aes = Aes.Create())
             {
                 aes.Key = Encoding.UTF8.GetBytes(Key);
-                aes.IV = iv;
+                aes.IV = new byte[16];
                 ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
 
-                using (MemoryStream memoryStream = new MemoryStream(buffer))
+                using (MemoryStream memoryStream = new MemoryStream(Convert.FromBase64String(text.Replace(" ", "+"))))
                 {
-                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, decryptor, CryptoStreamMode.Read))
+                    using (CryptoStream cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read))
                     {
-                        using (StreamReader streamReader = new StreamReader((Stream)cryptoStream))
+                        using (StreamReader streamReader = new StreamReader(cryptoStream))
                         {
                             return streamReader.ReadToEnd();
                         }
