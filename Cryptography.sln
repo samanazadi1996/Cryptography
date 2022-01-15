@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31919.166
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{2B15BBA1-9423-41FE-882C-7528264B2157}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Cryptography", "Test\Test.Cryptography\Test.Cryptography.csproj", "{196F829D-BBA0-404B-830B-D395D81F2581}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cryptography_RSA", "Src\Cryptography_RSA\Cryptography_RSA.csproj", "{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography_Blowfish", "Src\Cryptography_Blowfish\Cryptography_Blowfish.csproj", "{2FADC254-F9CB-4420-B3AE-1580C2220E7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FADC254-F9CB-4420-B3AE-1580C2220E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FADC254-F9CB-4420-B3AE-1580C2220E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FADC254-F9CB-4420-B3AE-1580C2220E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FADC254-F9CB-4420-B3AE-1580C2220E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{065FE418-36AF-4BAC-B3F6-63C965080A65} = {2B15BBA1-9423-41FE-882C-7528264B2157}
 		{196F829D-BBA0-404B-830B-D395D81F2581} = {189C931A-CBEE-494B-B791-79A12D3CBAF2}
 		{19DD3065-7D7D-413A-BCB9-B5F4762C41CD} = {2B15BBA1-9423-41FE-882C-7528264B2157}
+		{2FADC254-F9CB-4420-B3AE-1580C2220E7C} = {2B15BBA1-9423-41FE-882C-7528264B2157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D710BFF-ACA5-4FBC-A02F-05979E762C06}
